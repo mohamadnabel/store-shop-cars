@@ -1,10 +1,12 @@
 import React from "react";
-import MyULlist from "./myUnorderedList";
-function Myitem(pro) {
+import Mytest from "./test";
+function Myitem(props) {
   return (
     <div>
-      <h1>{pro.itemPrice}</h1>
-      <h1 className="name-item">{pro.itemName}</h1>
+      <h1>{props.itemName}</h1>
+      <h3>{props.itemPrice}</h3>
+      <h2>{props.itemDescreption}</h2>
+      <img alt="photo" src={props.itemPhotos} />
     </div>
   );
 }
