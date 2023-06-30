@@ -7,21 +7,21 @@ import KIA from "./assest_photo/kia.jpeg";
 const proudact = [
   {
     name: "BMW",
-    itemPrice: "125,000",
+    itemPrice: "125,000.00 SAR",
     itemDEC:
       "Cars are a significant investment, so buyers want to make sure they take their time to buy the right one for them. Dealerships need to focus on relationship-building to earn buyers trust to close sales quicker.",
     itemPhotos: BMW,
   },
   {
     name: "NISSAN",
-    itemPrice: "75,000",
+    itemPrice: "75,000.00 SAR",
     itemDEC:
       " They also need to take a more consultative approach to handle customers since buyers have more information today than ever and want to go with someone more knowledgeable about the car and industry",
     itemPhotos: NISSAN,
   },
   {
     name: "KIA",
-    itemPrice: "25,000",
+    itemPrice: "25,000.00 SAR",
     itemDEC:
       " They also need to take a more consultative approach to handle customers since buyers have more information today than ever and want to go with someone more knowledgeable about the car and industry",
     itemPhotos: KIA,
