@@ -1,12 +1,14 @@
 .img-item {
   width: 30%;
 }
-:hover.img-item {
-  padding: 10px;
-  width: 50%;
-  height: 50%;
-  /* border-radius: 50%; */
 
+@media (prefers-reduced-motion: no-preference) {
+  :hover.img-item {
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 .Title-name {
   color: greenyellow;

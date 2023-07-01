@@ -33,6 +33,7 @@ function Mytest() {
       <ul>
         <li>
           <Myitem
+          
             itemName={proudact[0].name}
             itemPhotos={proudact[0].itemPhotos}
             itemPrice={proudact[0].itemPrice}
