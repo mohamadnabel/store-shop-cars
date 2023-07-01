@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import navBarFFC from "./nav";
 import "../src/styleSheet.css";
 
 function Myitem(props) {
@@ -42,32 +43,35 @@ function Myitem(props) {
 
   return (
     <div className="main-contener">
+      <navBarFFC />
       <h1 className="Title-name">{Title}</h1>
       <h3 className="Price-card">Price : {Price}</h3>
       <h2>{props.itemDescreption}</h2>
       <img className="img-item" alt="photo" src={props.itemPhotos} />
       <br></br>
-      <button className="input-action" onClick={AddhandelerFucction}>
+      <br></br>
+      <br></br>
+      <button
+        className="btn btn-outline-secondary d-inline-flex align-items-center"
+        onClick={AddhandelerFucction}
+      >
         Add to the card
       </button>
-      <button className="input-action" onClick={HidehandelerFucction}>
+
+      <button
+        className="btn btn-outline-secondary d-inline-flex align-items-center"
+        onClick={HidehandelerFucction}
+      >
         Hide the price
       </button>
-      <button className="input-action" onClick={click}>
+      <button
+        className="btn btn-outline-secondary d-inline-flex align-items-center"
+        onClick={click}
+      >
         Show more
       </button>
-      <div>
-        {/* <input
-          id="input-id"
-          // onInput={E_input}
-          className="input-action"
-          placeholder="Inter your Email"
-          type="password"
-        ></input> */}
-        {/* <button className="input-action" onClick={E_input}>
-          Subbmit
-        </button> */}
-      </div>
+      <br></br>
+      <br></br>
     </div>
   );
 }
