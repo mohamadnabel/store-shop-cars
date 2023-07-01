@@ -24,3 +24,14 @@
   border-color: rgb(111, 111, 111);
   margin-top: 10px;
 }
+:hover.container-fluid {
+  background-color: rgb(205, 205, 205);
+  font-style: inherit;
+  /* padding: 1px; */
+  margin-top: 0.5px;
+  border-radius: 5%;
+  transition: calc(0.4s);
+}
+#but {
+  transition: calc(0.4s);
+}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../src/styleSheet.css'
 {/* <button class="btn btn-outline-secondary d-inline-flex align-items-center" type="button">
     Secondary icon
     <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>

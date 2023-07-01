@@ -52,6 +52,7 @@ function Myitem(props) {
       <br></br>
       <br></br>
       <button
+      id="but"
         className="btn btn-outline-secondary d-inline-flex align-items-center"
         onClick={AddhandelerFucction}
       >
@@ -59,12 +60,15 @@ function Myitem(props) {
       </button>
 
       <button
+      id="but"
         className="btn btn-outline-secondary d-inline-flex align-items-center"
+
         onClick={HidehandelerFucction}
       >
         Hide the price
       </button>
       <button
+      id="but"
         className="btn btn-outline-secondary d-inline-flex align-items-center"
         onClick={click}
       >
