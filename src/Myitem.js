@@ -5,14 +5,7 @@ import "../src/styleSheet.css";
 function Myitem(props) {
   const [Title, setTitle] = useState(props.itemName);
   const [Price, setPrice] = useState(props.itemPrice);
-  function E_input() {
-    if (document.getElementById("input-id").value === "1234") {
-      console.log(document.getElementById("input-id").value);
-    }
-    //  else {
-    //   console.log("not correct");
-    // }
-  }
+
   let DataArray = [];
   function pushProudact() {
     DataArray.push(Title);
@@ -20,6 +13,11 @@ function Myitem(props) {
   }
   function click() {
     alert("visit jeep wepsite to know");
+  }
+  let Cards = [];
+  function Add_to_card(params) {
+    Cards.push(Title);
+    console.log(Cards);
   }
   function AddhandelerFucction(params) {
     let message =
@@ -32,6 +30,7 @@ function Myitem(props) {
     if (userResponse) {
       alert("good let's continue :)");
       setTitle(Title + " (was added to card)");
+      Add_to_card();
       pushProudact();
     } else {
       window.alert = function () {};
@@ -44,6 +43,7 @@ function Myitem(props) {
   return (
     <div className="main-contener">
       <navBarFFC />
+      <p>{Cards}</p>
       <h1 className="Title-name">{Title}</h1>
       <h3 className="Price-card">Price : {Price}</h3>
       <h2>{props.itemDescreption}</h2>
@@ -52,7 +52,7 @@ function Myitem(props) {
       <br></br>
       <br></br>
       <button
-      id="but"
+        id="but"
         className="btn btn-outline-secondary d-inline-flex align-items-center"
         onClick={AddhandelerFucction}
       >
@@ -60,15 +60,14 @@ function Myitem(props) {
       </button>
 
       <button
-      id="but"
+        id="but"
         className="btn btn-outline-secondary d-inline-flex align-items-center"
-
         onClick={HidehandelerFucction}
       >
         Hide the price
       </button>
       <button
-      id="but"
+        id="but"
         className="btn btn-outline-secondary d-inline-flex align-items-center"
         onClick={click}
       >
