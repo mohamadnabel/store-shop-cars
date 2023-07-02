@@ -28,7 +28,7 @@ function NavBarFFC() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarsExample09">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0" id="but">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
                   Home

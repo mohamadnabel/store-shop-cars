@@ -25,13 +25,14 @@
   margin-top: 10px;
 }
 :hover.container-fluid {
-  background-color: rgb(205, 205, 205);
+  background-color: rgb(245, 245, 245);
   font-style: inherit;
   /* padding: 1px; */
-  margin-top: 0.5px;
-  border-radius: 5%;
-  transition: calc(0.4s);
+  /* margin-top: 0.5px; */
+  border-radius: 3%;
+  transition: calc(0.3s);
 }
+
 #but {
   transition: calc(0.4s);
 }
